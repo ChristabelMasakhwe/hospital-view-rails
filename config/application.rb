@@ -24,7 +24,10 @@ module HospitalViewRails
     config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
-    #
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+    # These settings can be overridden in specific environments using the files
+    config.action_dispatch.cookies_same_site_protection = :strict
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
