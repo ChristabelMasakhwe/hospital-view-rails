@@ -1,3 +1,3 @@
 # README
 
-<a> href="https://hospital-view-rails-production.up.railway.app/" </a>
+<a> https://hospital-view-rails-production.up.railway.app/ </a>
